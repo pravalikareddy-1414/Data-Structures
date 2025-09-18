@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 RotateArray.java
 import java.util.ArrayList;
 
@@ -16,4 +17,24 @@ public class RotateArray {
         int k = 2;
         System.out.println(rotateArray(arr, k)); // Output: [3, 4, 5, 1, 2]
     }
+=======
+RotateArray.java
+import java.util.ArrayList;
+
+public class RotateArray {
+    public static ArrayList<Integer> rotateArray(ArrayList<Integer> arr, int k) {
+        int n = arr.size();
+        k = k % n; // handle k > n
+        ArrayList<Integer> rotated = new ArrayList<>(arr.subList(k, n));
+        rotated.addAll(arr.subList(0, k));
+        return rotated;
+    }
+
+    public static void main(String[] args) {
+        ArrayList<Integer> arr = new ArrayList<>();
+        arr.add(1); arr.add(2); arr.add(3); arr.add(4); arr.add(5);
+        int k = 2;
+        System.out.println(rotateArray(arr, k)); // Output: [3, 4, 5, 1, 2]
+    }
+>>>>>>> c7d983cc9ad3a845e6870c994401b3beada090f7
 }
