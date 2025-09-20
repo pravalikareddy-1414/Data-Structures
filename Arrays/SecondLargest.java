@@ -8,6 +8,8 @@ public class SecondLargest {
         int largest = Integer.MIN_VALUE;
         int secondLargest = Integer.MIN_VALUE;
 
+        //largesr and second largest
+
         for (int i = 0; i < n; i++) {
             if (arr[i] > largest) {
                 secondLargest = largest;
